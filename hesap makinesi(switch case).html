@@ -1,0 +1,49 @@
+<!DOCTYPE html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Hesap Makinesi</title>
+
+    <script>
+        var sonuc;
+        var islem = prompt("İşlem seçiniz(Toplama:1, Çıkarma2, Çarpma3, Bölme4)");
+        var sayi1 = prompt("birinci sayiyi giriniz");
+        var sayi2 = prompt("ikinci sayiyi giriniz");
+
+        switch (Number(islem)) {
+
+            case 1:
+                sonuc = (Number(sayi1) + Number(sayi2));
+                document.write("İki sayının Toplamı: " + sonuc);
+                break;
+
+            case 2:
+                sonuc = (Number(sayi1) - Number(sayi2));
+                document.write("Cıkarma işleminin sonucu: " + sonuc);
+                break;
+
+            case 3:
+                sonuc = (Number(sayi1) * Number(sayi2));
+                document.write("İki sayının Çarpımı: " + sonuc);
+                break;
+
+            case 4:
+                sonuc = (Number(sayi1) / Number(sayi2));
+                document.write("İki sayının Bölümü: " + sonuc);
+                break;
+
+            default:
+                document.write("yanlış deger girdiniz");
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
