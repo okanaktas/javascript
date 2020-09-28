@@ -12,9 +12,11 @@
 
 
     <script type="text/javascript" language="javascript">
-        var degisken = "yardım et yarab sen";
+        var degisken = "yardım et yarab sen YarAb";
 
-        var sonuc = degisken.replace("yarab", "tanrı");
+        document.write(degisken + "<br>");
+
+        var sonuc = degisken.replace(/yarab/gi, "tanrı");
 
         document.write(sonuc);
     </script>
